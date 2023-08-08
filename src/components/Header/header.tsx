@@ -19,9 +19,9 @@ export function Header({}: Props) {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
     flexDirection: "row",
     alignItems: "center",
+    paddingHorizontal: 10,
   },
   leftContainer: {
     flex: 1,
