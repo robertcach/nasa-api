@@ -1,5 +1,4 @@
 import { Button, Image, StyleSheet, Text, View } from "react-native";
-import { TodayImage } from "../../types";
 
 export default function TodaysImage({
   url,
@@ -16,18 +15,16 @@ export default function TodaysImage({
         <Image source={{ uri: url }} style={styles.image} />
       </View>
 
-      <Text>{title}</Text>
-      <Text>{date}</Text>
-      <View>
-        <Button title="View" />
-      </View>
+      <Text style={styles.title}>{title}</Text>
+      <Text style={styles.date}>{date}</Text>
+      <Button title="View" />
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    marginHorizontal: 10,
+    marginHorizontal: 24,
     marginVertical: 16,
     borderRadius: 32,
     backgroundColor: "#2c449d",
@@ -43,5 +40,16 @@ const styles = StyleSheet.create({
   imageContainer: {
     borderWidth: 2,
     borderRadius: 32,
+  },
+  title: {
+    color: "#fff",
+    fontSize: 20,
+    marginVertical: 12,
+    fontWeight: "bold",
+  },
+  date: {
+    color: "#fff",
+    fontSize: 16,
+    marginBottom: 10,
   },
 });
