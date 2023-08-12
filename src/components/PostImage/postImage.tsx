@@ -1,6 +1,5 @@
-import { Text, View, StyleSheet } from "react-native";
+import { Text, View, StyleSheet, TouchableOpacity } from "react-native";
 import { TodayImage } from "../../types";
-import { Button } from "react-native";
 
 type PostImageProps = {
   postDay: TodayImage;
@@ -8,10 +7,12 @@ type PostImageProps = {
 export default function PostImage({ postDay }: PostImageProps) {
   return (
     <View style={styles.container}>
-      <Text>{postDay.title}</Text>
-      <Text>{postDay.date}</Text>
+      <Text style={styles.title}>{postDay.title}</Text>
+      <Text style={styles.date}>{postDay.date}</Text>
       <View>
-        <Button title="View" />
+        <TouchableOpacity style={styles.button}>
+          <Text>View</Text>
+        </TouchableOpacity>
       </View>
     </View>
   );
@@ -23,5 +24,18 @@ const styles = StyleSheet.create({
     borderRadius: 20,
     marginBottom: 12,
     padding: 16,
+  },
+  title: {
+    color: "#fff",
+    fontWeight: "600",
+    fontSize: 16,
+    marginBottom: 12,
+  },
+  date: {
+    color: "#fff",
+    fontSize: 12,
+  },
+  button: {
+    alignItems: "flex-end",
   },
 });
