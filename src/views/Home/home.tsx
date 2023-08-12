@@ -37,6 +37,7 @@ export function Home() {
     <View style={styles.container}>
       <Header />
       {todayImage && <TodaysImage {...todayImage} />}
+      <LastFiveDaysImages lastFiveDaysImages={lastFiveDaysImages} />
     </View>
   );
 }
