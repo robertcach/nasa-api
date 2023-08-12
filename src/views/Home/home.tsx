@@ -23,7 +23,7 @@ export function Home() {
       const fiveDaysAgo = format(subDays(new Date(), 5), "yyyy-MM-dd");
 
       const fetchLastFiveDaysImages: TodayImage[] = await useImage(
-        `&start-date=${fiveDaysAgo}&end_date=${todayDate}`
+        `&start_date=${fiveDaysAgo}&end_date=${todayDate}`
       );
 
       setLastDaysImages(fetchLastFiveDaysImages);
