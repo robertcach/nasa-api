@@ -10,17 +10,11 @@ export default function LastFiveDaysImages({
 }: LastFiveDaysImagesProps) {
   return (
     <View style={styles.container}>
-      <FlatList
-        data={lastFiveDaysImages}
-        renderItem={({ item: post }) => (
-          <PostImage postDay={post} key={post.title} />
-        )}
-      ></FlatList>
-      {/* <ScrollView style={styles.content}>
+      <ScrollView style={styles.content}>
         {lastFiveDaysImages.map((post) => (
           <PostImage postDay={post} key={post.title} />
         ))}
-      </ScrollView> */}
+      </ScrollView>
     </View>
   );
 }
