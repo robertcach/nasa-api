@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { StyleSheet, View, Text } from "react-native";
+import { StyleSheet, View } from "react-native";
 import { Header } from "../../components/Header";
 import { useImage } from "../../hooks/useImage";
 import { TodayImage } from "../../types";

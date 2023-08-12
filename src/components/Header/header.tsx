@@ -1,7 +1,6 @@
 import { Text, View, Image, StyleSheet } from "react-native";
 
-type Props = {};
-export function Header({}: Props) {
+export function Header() {
   return (
     <View style={styles.container}>
       <View style={styles.leftContainer}>
