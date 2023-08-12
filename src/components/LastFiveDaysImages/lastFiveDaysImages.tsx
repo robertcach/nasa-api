@@ -1,4 +1,4 @@
-import { View, StyleSheet, ScrollView, FlatList } from "react-native";
+import { View, StyleSheet, ScrollView, Text } from "react-native";
 import { TodayImage } from "../../types";
 import PostImage from "../PostImage/postImage";
 
@@ -10,6 +10,7 @@ export default function LastFiveDaysImages({
 }: LastFiveDaysImagesProps) {
   return (
     <View style={styles.container}>
+      <Text style={styles.title}>Last 5 days</Text>
       <ScrollView style={styles.content}>
         {lastFiveDaysImages.map((post) => (
           <PostImage postDay={post} key={post.title} />
@@ -22,6 +23,7 @@ export default function LastFiveDaysImages({
 const styles = StyleSheet.create({
   container: {
     marginVertical: 8,
+    marginHorizontal: 8,
   },
   title: {
     color: "#fff",
