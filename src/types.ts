@@ -11,4 +11,5 @@ export type TodayImage = {
 
 export type RootStackParams = {
   Home: undefined;
+  Detail: undefined;
 };
