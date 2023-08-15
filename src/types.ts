@@ -8,3 +8,7 @@ export type TodayImage = {
   title: string;
   url: string;
 };
+
+export type RootStackParams = {
+  Home: undefined;
+};
