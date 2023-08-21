@@ -22,6 +22,7 @@ export default function LastFiveDaysImages({
 
 const styles = StyleSheet.create({
   container: {
+    flex: 1,
     marginVertical: 8,
     marginHorizontal: 8,
   },

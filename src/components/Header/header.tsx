@@ -23,7 +23,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 10,
   },
   leftContainer: {
-    //flex: 1,
+    flex: 1,
     alignItems: "flex-start",
   },
   title: {
@@ -31,7 +31,7 @@ const styles = StyleSheet.create({
     color: "#ffffff",
   },
   rightContainer: {
-    //flex: 1,
+    flex: 1,
     alignItems: "flex-end",
   },
   image: {
